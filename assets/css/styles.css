@@ -222,6 +222,28 @@ body.light-theme {
 }
 
 /*=============== HEADER & NAV===============*/
+
+/* Base styles */
+.hire-me-text,
+.hire-me-icon {
+  margin-right: 1rem;
+  
+}
+
+/* Icon styling */
+.hire-me-icon i {
+  font-size: x-large;
+}
+
+/* Show text button only on large screens and up */
+.hire-me-text {
+  display: none;
+}
+
+.hire-me-icon {
+  display: inline;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -244,8 +266,9 @@ body.light-theme {
 .nav__logo {
   color: var(--first-color);
   font-weight: var(--font-medium);
-  font-size: x-large;
+  font-size: xx-large;
   transition: 0.4s;
+  margin-left: 1rem;
 }
 
 .nav__logo:hover {
@@ -335,7 +358,7 @@ body.light-theme {
 }
 
 .home__img {
-  width: 250px;
+  width: 225px;
 }
 
 .home__handle {
@@ -362,7 +385,7 @@ body.light-theme {
 }
 
 .home__social {
-  left: 0;
+  left: 3rem ;
   display: grid;
   row-gap: 0.5rem;
 }
@@ -393,7 +416,7 @@ body.light-theme {
 
 .home__scroll {
   color: var(--first-color);
-  right: -1.5rem;
+  right: 2rem;
   display: grid;
   row-gap: 2.25rem;
   justify-items: center;
@@ -420,6 +443,23 @@ body.light-theme {
 }
 
 .button:hover {
+  background-color: var(--first-color-alt);
+  color: var(--body-color);
+}
+
+/*this is is for button of hire me */
+.button_hire{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: 0.75rem 1rem;
+  border-radius: 0.8rem;
+  font-weight: var(--font-medium);
+  transition: 0.4s;
+  display: none;
+}
+
+.button_hire:hover {
   background-color: var(--first-color-alt);
   color: var(--body-color);
 }
@@ -1100,7 +1140,7 @@ body.light-theme {
 
   .home__handle {
     width: 290px;
-    height: 400px;
+    height: 325px;
   }
 
   .home__img {
@@ -1214,4 +1254,20 @@ body.light-theme {
     padding: 0.4rem;
     border-radius: 0.5rem;
   }
+
+  .hire-me-text {
+    display: inline-block;
+  }
+
+  .hire-me-icon {
+    display: none;
+  }
 }
+
+
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", Arial, Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
