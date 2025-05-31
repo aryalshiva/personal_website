@@ -518,6 +518,13 @@ body.light-theme {
   padding: 0.25rem 0.75rem;
   font-weight: var(--font-medium);
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  min-height: 40px;
+  box-sizing: border-box;
 }
 
 .active-resume {
@@ -610,6 +617,15 @@ body.light-theme {
   margin: 0 auto;
   padding: 0.5rem 0;
 }
+
+.timeline__box {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
+
 
 .timeline__container::before {
   content: '';
