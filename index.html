@@ -644,79 +644,383 @@
 
             <div class="work__filters">
                 <span class="work__item active-work" data-filter='all'>All</span>
-                <span class=" work__item" data-filter='.web'>Web</span>
-                <span class=" work__item" data-filter='.movil'>Software</span>
-                <span class=" work__item" data-filter='.design'>Design</span>
-
+                <span class="work__item" data-filter='.web'>Web</span>
+                <span class="work__item" data-filter='.movil'>Software</span>
+                <span class="work__item" data-filter='.design'>Design</span>
             </div>
 
             <div class="work__container container grid">
+                <!-- Project 1 -->
                 <div class="work__card mix web">
                     <img src="assets/img/smartchoiceworkshiva.png" alt="SmartChoice_ShivaAryal" class="work__img">
-
-                    <h3 class="work__title">Web Design</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    <h3 class="work__title">SmartChoice Website</h3>
+                    <a href="#project1" class="work__button modal-open">
+                        View Details <i class='bx bx-right-arrow work__icon'></i>
                     </a>
-                    
                 </div>
 
+                <!-- Project 2 -->
                 <div class="work__card mix movil">
                     <img src="assets/img/ShivaAryal_work2.png" alt="ShivaAryal_Contact_us" class="work__img">
-
-                    <h3 class="work__title">Software</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    <h3 class="work__title">Contact Management</h3>
+                    <a href="#project2" class="work__button modal-open">
+                        View Details <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
 
+                <!-- Project 3 -->
                 <div class="work__card mix design">
                     <img src="assets/img/shivawebsite2.png" alt="ShivaAryal_website" class="work__img">
-
                     <h3 class="work__title">Brand Design</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    <a href="#project3" class="work__button modal-open">
+                        View Details <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
 
+                <!-- Project 4 -->
                 <div class="work__card mix web">
                     <img src="assets/img/ShivaAryalWebsite.png" alt="ShivaAryal_website" class="work__img">
-
-                    <h3 class="work__title">Web Design</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    <h3 class="work__title">Personal Portfolio</h3>
+                    <a href="#project4" class="work__button modal-open">
+                        View Details <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
 
+                <!-- Project 5 -->
                 <div class="work__card mix movil">
                     <img src="assets/img/Shiva_project_Rojgaar.png" alt="Shiva's Work" class="work__img">
-
-                    <h3 class="work__title">Software</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    <h3 class="work__title">Rojgaar Software</h3>
+                    <a href="#project5" class="work__button modal-open">
+                        View Details <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
 
+                <!-- Project 6 -->
                 <div class="work__card mix web">
                     <img src="assets/img/ShivaAryal_Website3.png" alt="ShivaAryal_website3" class="work__img">
-
-                    <h3 class="work__title">Web Design</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    <h3 class="work__title">E-commerce Site</h3>
+                    <a href="#project6" class="work__button modal-open">
+                        View Details <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
-
-
             </div>
         </section>
 
-<!--
+        <!-- Portfolio Modals -->
+        <!-- Project 1 Modal -->
+        <div class="portfolio__modal" id="project1">
+            <div class="portfolio__modal-content">
+                <i class='bx bx-x portfolio__modal-close'></i>
+
+                <h3 class="portfolio__modal-title">SmartChoice Website</h3>
+                <p class="portfolio__modal-description">
+                    A comprehensive website for SmartChoice with modern design and user-friendly interface.
+                </p>
+
+                <ul class="portfolio__modal-list">
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Responsive design for all devices
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Built with HTML, CSS, JavaScript
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Optimized for fast loading
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            SEO-friendly structure
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="..." target="_blank" class="portfolio__modal-button portfolio__modal-live-button">
+                    Live Preview <i class='bx bx-link-external'></i>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Project 2 Modal -->
+        <div class="portfolio__modal" id="project2">
+            <div class="portfolio__modal-content">
+                <i class='bx bx-x portfolio__modal-close'></i>
+
+                <h3 class="portfolio__modal-title">Contact Management System</h3>
+                <p class="portfolio__modal-description">
+                    A software solution for managing contacts with advanced search and categorization features.
+                </p>
+
+                <ul class="portfolio__modal-list">
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Built with Python and Django
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            PostgreSQL database
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            User authentication system
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Export contacts to CSV
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="..." target="_blank" class="portfolio__modal-button portfolio__modal-live-button">
+                    Live Preview <i class='bx bx-link-external'></i>
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- Project 3 Modal -->
+        <div class="portfolio__modal" id="project3">
+            <div class="portfolio__modal-content">
+                <i class='bx bx-x portfolio__modal-close'></i>
+
+                <h3 class="portfolio__modal-title">Brand Design Package</h3>
+                <p class="portfolio__modal-description">
+                    Complete brand identity design including logo, color palette, typography, and brand guidelines.
+                </p>
+
+                <ul class="portfolio__modal-list">
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Custom logo design
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Brand color palette
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Typography system
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Brand style guide
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Business card and stationery design
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="..." target="_blank" class="portfolio__modal-button portfolio__modal-live-button">
+                    Live Preview <i class='bx bx-link-external'></i>
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- Project 4 Modal -->
+        <div class="portfolio__modal" id="project4">
+            <div class="portfolio__modal-content">
+                <i class='bx bx-x portfolio__modal-close'></i>
+
+                <h3 class="portfolio__modal-title">Personal Portfolio Website</h3>
+                <p class="portfolio__modal-description">
+                    A modern, responsive portfolio website showcasing my skills, projects, and professional journey.
+                </p>
+
+                <ul class="portfolio__modal-list">
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Fully responsive design
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Dark/light mode toggle
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Interactive elements with JavaScript
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Optimized for performance
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Contact form functionality
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="..." target="_blank" class="portfolio__modal-button portfolio__modal-live-button">
+                    Live Preview <i class='bx bx-link-external'></i>
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- Project 5 Modal -->
+        <div class="portfolio__modal" id="project5">
+            <div class="portfolio__modal-content">
+                <i class='bx bx-x portfolio__modal-close'></i>
+
+                <h3 class="portfolio__modal-title">Rojgaar Job Portal</h3>
+                <p class="portfolio__modal-description">
+                    A comprehensive job portal software connecting employers with job seekers in Nepal.
+                </p>
+
+                <ul class="portfolio__modal-list">
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Job posting and application system
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Resume builder tool
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Employer dashboard
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Job search filters
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Admin management panel
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="..." target="_blank" class="portfolio__modal-button portfolio__modal-live-button">
+                    Live Preview <i class='bx bx-link-external'></i>
+                </a>
+                
+            </div>
+        </div>
+
+        <!-- Project 6 Modal -->
+        <div class="portfolio__modal" id="project6">
+            <div class="portfolio__modal-content">
+                <i class='bx bx-x portfolio__modal-close'></i>
+
+                <h3 class="portfolio__modal-title">E-commerce Platform</h3>
+                <p class="portfolio__modal-description">
+                    A full-featured online store with product management, shopping cart, and secure checkout.
+                </p>
+
+                <ul class="portfolio__modal-list">
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Product catalog with categories
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Shopping cart functionality
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Secure payment gateway integration
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            User account system
+                        </p>
+                    </li>
+
+                    <li class="portfolio__modal-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p class="portfolio__modal-info">
+                            Admin dashboard for inventory
+                        </p>
+                    </li>
+                </ul>
+
+                <a href="..." target="_blank" class="portfolio__modal-button portfolio__modal-live-button">
+                    Live Preview <i class='bx bx-link-external'></i>
+                </a>
+                
+            </div>
+        </div>
+
+
+
+
+        <!--
         <=============== TESTIMONIALS ===============
         <section class="testimonial section">
             <span class="section__subtitle">My clients say</span>
