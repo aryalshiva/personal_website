@@ -105,31 +105,53 @@
     <!--=============== MAIN ===============-->
     <main class="main">
         <!--=============== HOME ===============-->
-        <section class="home section" id="home">
+            <section class="home section" id="home">
             <div class="home__container container grid">
-            
+
+                <!-- Top text (mobile only) -->
+                <div class="home__data mobile-version" style="height:90px;">
+                <span class="home__greeting">Hello, I'm</span>
+                <h1 class="home__name">Shiva Aryal</h1>
+                <h3 class="home__education">Fullstack Developer</h3>
+                </div>
+
+                <!-- Image always visible -->
                 <div class="home__handle">
-                    <img src="assets/img/shivaaryal5.png" alt="" class="home__img">
+                <img src="assets/img/shivaaryal5.png" alt="" class="home__img">
                 </div>
 
-                <div class="home__data">
-                    <span class="home__greeting">Hello, I'm</span>
-                    <h1 class="home__name">Shiva Aryal</h1>
-                    <h3 class="home__education">Fullstack Developer</h3>
+                <!-- Desktop text + buttons (only for large screen) -->
+                <div class="home__data desktop-version">
+                <span class="home__greeting">Hello, I'm</span>
+                <h1 class="home__name">Shiva Aryal</h1>
+                <h3 class="home__education">Fullstack Developer</h3>
 
-                    <div class="home__button">
-                        <a download="" href="assets/pdf/Shiva_CV.pdf" class="button button--ghost">
-                            Download CV
-                        </a>
-
-                        <a href="#about" class="button">About</a>
-                    </div>
+                <div class="home__button">
+                    <a download href="assets/pdf/Shiva_CV.pdf" class="button button--ghost">
+                    Download CV
+                    </a>
+                    <a href="#about" class="button">About</a>
                 </div>
+                </div>
+
+                <!-- Bottom buttons (only for mobile, after image) -->
+                <div class="home__data mobile-version2">
+                <div class="home__button">
+                    <a download href="assets/pdf/Shiva_CV.pdf" class="button button--ghost">
+                    Download CV
+                    </a>
+                    <a href="#about" class="button">About</a>
+                </div>
+                </div>
+
+
 
                 <div class="home__social">
                     <a href="">
-                    <i style="transform: rotate(90deg); margin-bottom: 4rem;"></i>
-                    </a>
+                    <div style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 0.8rem; color: var(--first-color); margin-left: 0.5rem; margin-bottom: 1rem;">
+                        Follow Me
+                    </div>
+                    <div style="width: 1px; height: 3rem; background-color: var(--first-color); margin-left: 0.8rem;margin-bottom: 1.5rem;"></div>
                     <a href="https://www.linkedin.com/in/shiva-aryal-331696283/" target="_blank" class="home__social-link">
                         <i class='bx bxl-linkedin'></i>
                     </a>
@@ -144,7 +166,7 @@
                     </a>
                 </div>
 
-                <a href="#about" class="home__scroll">
+                <a href="mailto:shivaaryal62@gmail.com " class="home__scroll">
                     <span class="home__scroll-name">--------</span>   
                     <span class="home__scroll-name">62@gmail.com</span>   
                     <span class="home__scroll-name">Shivaaryal</span>
@@ -162,7 +184,7 @@
             <h2 class="section__title">About Me</h2>
 
             <div class="about__container container grid">
-                <img src="assets/img/ShivaAryal.jpg" alt="Shiva Aryal" class="about__img">
+                <img src="assets/img/shivaaryal.jpg" alt="Shiva Aryal" class="about__img">
 
                 <div class="about__data">
                     <div class="about__info">
