@@ -3,16 +3,8 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
+  
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*   
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-  */
   --first-hue: 250;
   --sat: 66%;
   --lig: 75%;
@@ -412,7 +404,7 @@ body.light-theme {
   color: var(--first-color);
   right: 2rem;
   display: grid;
-  row-gap: 3.82rem;
+  row-gap: 3.85rem;
   justify-items: center;
 }
 
