@@ -592,6 +592,19 @@ body.light-theme {
 }
 
 /*===========timeline=============*/
+/* Hide initially but allow transitions */
+/* Fade transition */
+#skillsSection, #educationSection, #experienceSection {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#skillsSection.show,
+#educationSection.show,
+#experienceSection.show {
+    opacity: 1;
+}
+
 
 .timeline__filters {
   display: flex;

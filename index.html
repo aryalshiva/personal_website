@@ -200,19 +200,19 @@
 
 
             <div class="timeline__filters">
-                <span class="resume_item" timeline='Education'>
-                    <i class='bx bxs-graduation'></i> Education
-                </span>
                 <span class="resume_item" timeline='Skills'>
                     <i class='bx bxs-user-detail'></i> Personal Skills
                 </span>
                 <span class="resume_item" timeline='Experience'>
                     <i class='bx bxs-briefcase'></i> Experience
                 </span>
+                <span class="resume_item" timeline='Education'>
+                    <i class='bx bxs-graduation'></i> Education
+                </span>
             </div>
 
             <!--=============== PERSONAL SKILLS ===============-->
-            <div class="Skills">
+            <div class="Skills fade-section reveal-target" id="skillsSection" style="display: none;">
                 <div class="skills__container container grid">
                     <div class="skills__content">
                         <h3 class="skills__title">Frontend Development</h3>
@@ -346,9 +346,47 @@
                 </div>
             </div>
 
+            <!--=============== EXPERIENCE TIMELINE ===============-->
+            <div class="Experience fade-section reveal-target" id="experienceSection" style="display: none;">
+                <section class="timeline section">
+                    <div class="timeline__container">
+                        <!-- 2022 -->
+                        <div class="timeline__item left">
+                            <div class="timeline__content">
+                                <span class="timeline__year">2022</span>
+                                <p>Web Developer Internship<br><strong>TechCompany</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- 2023 -->
+                        <div class="timeline__item right">
+                            <div class="timeline__content">
+                                <span class="timeline__year">2023</span>
+                                <p>Freelance Projects<br><strong>Various Clients</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- 2024 -->
+                        <div class="timeline__item left">
+                            <div class="timeline__content">
+                                <span class="timeline__year">2024</span>
+                                <p>Full Stack Developer at XYZ Ltd.<br><strong>XYZ Ltd.</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- 2025 -->
+                        <div class="timeline__item right">
+                            <div class="timeline__content">
+                                <span class="timeline__year">2025</span>
+                                <p>Lead Developer on Major Project<br><strong>ABC Corp.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
             <!--=============== EDUCATION TIMELINE ===============-->
-            <div class="Education">
+            <div class="Education fade-section reveal-target" id="educationSection" style="display: none;">
                     <section class="timeline section">
                         <div class="timeline__container ">
                             <!-- 2019 -->
@@ -411,47 +449,10 @@
                 
             </div>
 
-            <!--=============== EXPERIENCE TIMELINE ===============-->
-            <div class="Experience">
-                <section class="timeline section">
-                    <div class="timeline__container">
-                        <!-- 2022 -->
-                        <div class="timeline__item left">
-                            <div class="timeline__content">
-                                <span class="timeline__year">2022</span>
-                                <p>Web Developer Internship<br><strong>TechCompany</strong></p>
-                            </div>
-                        </div>
-
-                        <!-- 2023 -->
-                        <div class="timeline__item right">
-                            <div class="timeline__content">
-                                <span class="timeline__year">2023</span>
-                                <p>Freelance Projects<br><strong>Various Clients</strong></p>
-                            </div>
-                        </div>
-
-                        <!-- 2024 -->
-                        <div class="timeline__item left">
-                            <div class="timeline__content">
-                                <span class="timeline__year">2024</span>
-                                <p>Full Stack Developer at XYZ Ltd.<br><strong>XYZ Ltd.</strong></p>
-                            </div>
-                        </div>
-
-                        <!-- 2025 -->
-                        <div class="timeline__item right">
-                            <div class="timeline__content">
-                                <span class="timeline__year">2025</span>
-                                <p>Lead Developer on Major Project<br><strong>ABC Corp.</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
     
 
         </section>
+
 
         
 
@@ -633,6 +634,8 @@
                 </div>
             </div>
         </section>
+
+
 
         <!--=============== WORK ===============-->
         <section class="work section" id="work">
@@ -907,6 +910,8 @@
 
     <!--=============== EMAIL JS ===============-->
     <script src="assets/js/email.js"></script>
+
+    <script src="assets/js/skills.js"></script>
 
 
 </body>
