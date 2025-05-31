@@ -161,6 +161,7 @@ body.light-theme {
 .light-theme .button,
 .light-theme .button:hover,
 .light-theme .active-work,
+.light-theme .active-resume,
 .light-theme .footer__title,
 .light-theme .footer__link,
 .light-theme .footer__copy {
@@ -525,6 +526,20 @@ body.light-theme {
 }
 
 /*=============== SKILLS ===============*/
+
+.resume_item {
+  cursor: pointer;
+  color: var(--title-color);
+  padding: 0.25rem 0.75rem;
+  font-weight: var(--font-medium);
+  border-radius: 0.5rem;
+}
+
+.active-resume {
+  background-color: var(--first-color);
+  color: var(--body-color);
+}
+
 .skills__container {
   row-gap: 2rem;
   padding-top: 1rem;
@@ -577,6 +592,14 @@ body.light-theme {
 }
 
 /*===========timeline=============*/
+
+.timeline__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: 2rem;
+}
 
 .timeline.section {
   padding: 2rem 0.5rem;
@@ -1141,8 +1164,16 @@ body.light-theme {
     font-size: var(--small-font-size);
   }
 
+  .resume_item{
+  font-size: var(--small-font-size);
+  }
+
   .work__filters {
     column-gap: 0.25rem;
+  }
+
+  .timeline__filters{
+    column-gap:0.25rem;
   }
 }
 
