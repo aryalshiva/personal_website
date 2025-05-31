@@ -133,9 +133,10 @@
                 </div>
 
                 <a href="#about" class="home__scroll">
-                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">--------</span>   
                     <span class="home__scroll-name">62@gmail.com</span>   
                     <span class="home__scroll-name">Shivaaryal</span>
+                    <span class="home__scroll-name">---------</span> 
 
                 </a>
            
@@ -788,27 +789,35 @@
                 <div class="contact__content">
                     <h3 class="contact__title contact__title-form">Write Me your Message</h3>
 
-                    <form action="" class="contact__form">
+                    <form id="contact-form" class="contact__form">
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Enter name" class="contact__form-input">
+                            <label for="name" class="contact__form-tag">Name</label>
+                            <input type="text" id="name" placeholder="Enter name" class="contact__form-input">
                         </div>
 
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                            <input type="text" placeholder="Enter email" class="contact__form-input">
+                            <label for="email" class="contact__form-tag">Mail</label>
+                            <input type="email" id="email" placeholder="Enter email" class="contact__form-input">
                         </div>
 
                         <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
-                                class="contact__form-input "></textarea>
+                            <label for="message" class="contact__form-tag">Message</label>
+                            <textarea id="message" cols="30" rows="10" placeholder="Write your Message"
+                                class="contact__form-input"></textarea>
                         </div>
 
-
-                        <button class="button">
+                        <button type="submit" class="button">
                             Send Message
                         </button>
+                            <!-- Success popup -->
+                        <div id="popup" class="popup hidden">
+                            <p>Message sent successfully!</p>
+                        </div>
+
+                        <!-- Error popup -->
+                        <div id="error-popup" class="popup hidden">
+                            <p>Error sending message. Please try again.</p>
+                        </div>
                     </form>
 
                 </div>
@@ -881,6 +890,9 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="assets/js/email.js"></script>
 </body>
 
 </html>

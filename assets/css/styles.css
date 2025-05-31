@@ -989,6 +989,41 @@ body.light-theme {
 .contact__form-area textarea {
   resize: none;
 }
+
+
+/*=============== POPUP ===============*/
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: #4BB543;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 10;
+    font-size: 1rem;
+    text-align: center;
+    width: fit-content;
+    max-width: 90%;
+}
+
+#error-popup {
+    background-color: #e74c3c;
+}
+
+.popup.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.hidden {
+    display: none;
+}
+
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--first-color);
