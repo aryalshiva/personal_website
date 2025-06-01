@@ -214,14 +214,14 @@
     </script>
     <!-- Your existing head content -->
     <style>
-        /* Loading animation styles */
+        /* Loading overlay styles */
         #page-loader {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #f8f9fa; /* Match your site's background */
+            background-color: hsl(var(--second-hue), 48%, 8%); /* Dark background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -229,30 +229,40 @@
             transition: opacity 0.5s ease-out;
         }
         
+        /* Loader animation - now with transparent background */
         .loader {
             width: 50px;
             aspect-ratio: 1;
             display: grid;
-            border: 4px solid #0000;
+            position: relative;
+            z-index: 10000;
+            /* Removed white background */
             border-radius: 50%;
-            border-right-color: #6e57e0; /* Using your theme color */
-            animation: l15 1s infinite linear;
         }
+        
         .loader::before,
         .loader::after {    
             content: "";
             grid-area: 1/1;
-            margin: 2px;
-            border: inherit;
-            border-radius: 50%;
-            animation: l15 2s infinite;
+            --c: no-repeat radial-gradient(farthest-side, #6e57e0 92%, #0000); /* Purple theme color */
+            background: 
+                var(--c) 50% 0, 
+                var(--c) 50% 100%, 
+                var(--c) 100% 50%, 
+                var(--c) 0 50%;
+            background-size: 12px 12px;
+            animation: l12 1s infinite;
         }
-        .loader::after {
-            margin: 8px;
-            animation-duration: 3s;
+        
+        .loader::before {
+            margin: 4px;
+            filter: hue-rotate(45deg);
+            background-size: 8px 8px;
+            animation-timing-function: linear;
         }
-        @keyframes l15 { 
-            100% { transform: rotate(1turn); }
+
+        @keyframes l12 { 
+            100% { transform: rotate(0.5turn); }
         }
         
         /* Hide when loaded */
