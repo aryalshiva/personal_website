@@ -145,7 +145,8 @@ body.light-theme {
 
 .light-theme .home__social-link::after,
 .light-theme .footer__social-link {
-  background-color: var(--title-color);
+  /* background-color: var(--title-color); */
+  color: whitesmoke;
 }
 
 .light-theme .home__social-link,
@@ -1190,6 +1191,7 @@ body.light-theme {
 .footer__title {
   text-align: center;
   margin-bottom: 2rem;
+  font-family: "Old English Text MT", "UnifrakturMaguntia", "UnifrakturCook", "Blackletter", "Gothic", serif;
 }
 
 .footer__list {
@@ -1208,11 +1210,11 @@ body.light-theme {
 }
 
 .footer__social-link {
-  background-color: var(--body-color);
-  color: var(--first-color);
+  /* background-color: var(--body-color); */
+  color: whitesmoke;
   padding: 0.35rem;
   border-radius: 0.25rem;
-  font-size: 1rem;
+  font-size: 2rem;
   display: inline-flex;
 }
 
@@ -1627,7 +1629,7 @@ body.light-theme {
   }
 
   .footer__social-link {
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
   }
