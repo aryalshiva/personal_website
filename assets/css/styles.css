@@ -947,7 +947,7 @@ body.light-theme {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--first-color);
   cursor: pointer;
 }
