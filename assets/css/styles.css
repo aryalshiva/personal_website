@@ -967,6 +967,7 @@ body.light-theme {
 .active-modal {
   visibility: visible;
   opacity: 1;
+  overflow-y:auto;
 }
 
 /*=============== TESTIMONIAL ===============*/
