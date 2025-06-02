@@ -682,6 +682,7 @@ body.light-theme {
 
 .timeline__year {
   display: block;
+  padding-bottom: 0.8;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--first-color);
