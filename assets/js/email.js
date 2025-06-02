@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize EmailJS with your public key
-  emailjs.init("wh2aacVrjVdaDZYhM"); // Your public key from EmailJS
+  // Initialize EmailJS
+  emailjs.init("wh2aacVrjVdaDZYhM");
 
   const form = document.getElementById("contact-form");
-  const popup = document.getElementById("popup");
-  const errorPopup = document.getElementById("error-popup");
+  const notification = document.getElementById("notification");
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -15,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Validation
     if (!name || !email || !message) {
-      showErrorPopup("Please fill in all fields.");
+      showNotification("Please fill in all fields.", "error");
       return;
     }
 
     if (!validateEmail(email)) {
-      showErrorPopup("Please enter a valid email address.");
+      showNotification("Please enter a valid email address.", "error");
       return;
     }
 
@@ -37,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
         form.reset();
-        showPopup(popup, "Message sent successfully!");
+        showNotification("Message sent successfully! We'll contact you soon.", "success");
       }, function(error) {
         console.error('FAILED...', error);
-        showPopup(errorPopup, "Error sending message. Please try again.");
+        showNotification("Error sending message. Please try again later.", "error");
       });
   });
 
@@ -49,23 +48,26 @@ document.addEventListener("DOMContentLoaded", function () {
     return re.test(email.toLowerCase());
   }
 
-  function showPopup(popupElement, message) {
-    popupElement.textContent = message;
-    popupElement.classList.remove("hidden");
+  function showNotification(message, type) {
+    const notification = document.getElementById("notification");
     
-    // Hide after 3 seconds
-    setTimeout(() => {
-      popupElement.classList.add("hidden");
-    }, 3000);
-  }
-
-  function showErrorPopup(message) {
-    errorPopup.textContent = message;
-    errorPopup.classList.remove("hidden");
+    // Set message and type
+    notification.textContent = message;
+    notification.className = "notification"; // Reset classes
+    notification.classList.add(type);
     
-    // Hide after 3 seconds
+    // Show notification
+    notification.classList.add("show");
+    
+    // Hide after 8 seconds
     setTimeout(() => {
-      errorPopup.classList.add("hidden");
-    }, 3000);
+      notification.classList.remove("show");
+      notification.classList.add("hide");
+      
+      // Remove hide class after animation completes
+      setTimeout(() => {
+        notification.classList.remove("hide");
+      }, 300);
+    }, 5000);
   }
 });
