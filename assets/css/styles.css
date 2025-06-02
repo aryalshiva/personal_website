@@ -407,6 +407,7 @@ body.light-theme {
   display: grid;
   row-gap: 3.85rem;
   justify-items: center;
+  gap: 100px;
 }
 
 .home__scroll-icon {
@@ -1108,6 +1109,15 @@ body.light-theme {
 
 /*=============== POPUP ===============*/
 
+
+                    .home__scroll-email-link {
+                        transition: color 0.3s;
+                        cursor: pointer;
+                    }
+                    .home__scroll-email-link:hover {
+                        color: var(--first-color, #6e57e0); 
+                    }
+
 /* ============ NOTIFICATION SYSTEM ============ */
 .notification {
   position: fixed;
@@ -1324,7 +1334,7 @@ body.light-theme {
 
   .home__scroll {
   color: var(--first-color);
-  right: 0rem;
+  right: -30px;
   }
 
 }
